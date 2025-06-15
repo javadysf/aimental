@@ -1,0 +1,432 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+@layer components {
+  .xs-icon {
+    @apply w-4 h-4;
+  }
+  .small-icon {
+    @apply w-8 h-8;
+  }
+  .med-icon {
+    @apply w-12 h-12;
+  }
+  .lg-icon {
+    @apply w-16 h-16;
+  }
+  .gp4 {
+    @apply gap-4 p-4;
+  }
+  .gp6 {
+    @apply gap-6 p-6;
+  }
+  .gp8 {
+    @apply gap-8 p-8;
+  }
+  .col {
+    @apply flex flex-col;
+  }
+  .center {
+    @apply items-center justify-center;
+  }
+  .white-button {
+    @apply border-zinc-600 border rounded-xl text-blue py-2 px-4 w-36 text-center dark:text-blue-50 cursor-pointer;
+  }
+  .blue-button {
+    @apply bg-blue rounded-xl text-white py-2 px-4 w-36 cursor-pointer text-center dark:bg-blue-300;
+  }
+  .title-2 {
+    @apply text-[28px] dark:text-neutral-300 text-neutral-800 font-semibold max-lg:text-base ;
+  }
+  .tags {
+    @apply w-fit h-9 text-xs;
+  }
+  .qoutes
+  {
+    @apply p-8 rounded-[32px] bg-neutral-100 dark:bg-zinc-800 border-l-[5px] border-[#B0B0B0]
+  }
+  .social-btn{
+    @apply flex border  cursor-pointer border-zinc-800 rounded-[12px] h-10 content-center gap-2  center dark:border-zinc-400 dark:text-neutral-300
+  }
+  .register-input {
+    @apply lg:w-full bg-zinc-50 text-sm text-zinc-400  p-2 rounded-xl border dark:bg-zinc-800 dark:text-neutral-300 text-neutral-800 border-zinc-600 placeholder-zinc-400
+  }
+}
+
+body {
+  font-family: poppins;
+}
+
+.MuiPickersDay-today {
+  background-color: #f0f6fe !important;
+  color: #273d81 !important;
+}
+
+.MuiTabs-flexContainer {
+  justify-content: center !important;
+}
+
+.serverHtml > blockquote > p
+{
+  background-color: #000;
+}
+.carousel-wrapper {
+  position: relative;
+}
+.react-multi-carousel-list{
+  overflow: inherit !important;
+}
+.carousel {
+  position: unset;
+
+  .react-multiple-carousel__arrow {
+    position: absolute;
+  }
+ 
+  .react-multiple-carousel__arrow--left {
+    bottom: -60px;
+    left: 0px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    z-index: 10;
+  }
+  .react-multiple-carousel__arrow::before {
+    color: black;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    bottom: -60px;
+    background-color: white;
+    left: 65px;
+    width: 30px;
+    border-radius: 15px;
+    border: 1px solid;
+    z-index: 10;
+  }
+}
+.availability {
+  .MuiAccordion-root {
+    box-shadow: none !important;
+    color: inherit !important;
+  }
+  .MuiAccordion-root::before {
+    height: 0 !important;
+  }
+  .MuiAccordion-root.Mui-disabled
+  {
+    background-color: white !important;
+    height: 48px !important;
+  }
+  .MuiAccordionSummary-root.Mui-expanded{
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+    padding-right: 0px !important;
+  }
+}
+.MuiAccordion-root.Mui-expanded
+{
+  margin: 0 !important;
+
+}
+.MuiInputBase-root-MuiOutlinedInput-root {
+  padding-right: 0px !important;
+}
+
+.ql-snow {
+  border: none !important;
+}
+.ql-container {
+  font-family: "poppins" !important;
+  height: 130px !important;
+}
+.ql-editor ::placeholder {
+  color: #9cc4f4;
+}
+.ql-toolbar {
+  border-bottom: 1px solid #262626 !important;
+}
+.timepicker {
+  .MuiInputLabel-root {
+    font-size: 12px !important;
+    color: #262626 !important;
+    top: -7px !important;
+    font-weight: 600 !important;
+  }
+
+  .MuiOutlinedInput-root {
+    height: 33px !important ;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #262626 !important;
+  }
+}
+.rbc-event {
+  border-radius: 16px !important;
+  background-color: #c4dbf9 !important;
+  color: #1c274f;
+  font-weight: 500 !important;
+  border: none !important;
+  padding: 6px !important;
+  flex-flow: column !important;
+}
+.rbc-date-cell {
+  text-align: center !important;
+}
+
+.rbc-now > button {
+  margin-top: 1px !important;
+  width: 30px !important;
+  height: 30px !important;
+  color: white !important;
+  background-color: #2d55cc !important;
+  padding: 2px !important;
+  border-radius: 50px !important;
+}
+.rbc-today {
+  background: none !important;
+  color: blue !important;
+}
+.rbc-timeslot-group {
+  min-height: 60px !important;
+}
+.rbc-time-view {
+  border: none !important;
+}
+.rbc-month-view {
+  border: none !important;
+}
+.carousel2 {
+  position: unset;
+  .react-multiple-carousel__arrow {
+    position: absolute;
+  }
+  .react-multi-carousel-item {
+    width: fit-content;
+  }
+  .react-multi-carousel-track {
+    gap: 16px;
+    width: 90%;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: 0px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    z-index: 10;
+  }
+  .react-multiple-carousel__arrow::before {
+    color: black;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: -55px;
+    background-color: white;
+    width: 30px;
+    border-radius: 15px;
+    border: 1px solid;
+    z-index: 10;
+  }
+}
+
+.MuiPopover-paper {
+  padding: 10px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 16px !important;
+  border-radius: 12px !important;
+}
+.rbc-off-range-bg {
+  background-color: #d1d1d1 !important;
+}
+
+.MuiTableCell-root
+{
+  font-family: "poppins" !important;
+}
+.dark {
+  .availability {
+    .MuiAccordion-root.Mui-disabled
+    {
+      background-color:#262626 !important;
+    }
+    .MuiAccordion-root
+    {
+      background-color: #262626 !important;
+    }
+  }
+  .MuiSpeedDial-fab
+  {
+    background-color: #9cc4f4 !important;
+    color: #1c274f !important;
+
+  }
+  .MuiTableCell-root
+  {
+    color: #d1d1d1 !important;
+    font-family: "poppins" !important;
+  }
+  .rbc-now > button {
+    color: #273d81 !important;
+    background-color: #c4dbf9 !important;
+  }
+  .rbc-button-link {
+    color: #b0b0b0 !important;
+  }
+  .rbc-label {
+    color: #b0b0b0 !important;
+  }
+  .rbc-off-range-bg {
+    background-color: #262626 !important;
+  }
+  .rbc-month-header {
+    color: #f6f6f6 !important;
+  }
+  .rbc-date-cell {
+    color: #f6f6f6 !important;
+  }
+  .react-multiple-carousel__arrow--left {
+    background-color: #262626;
+  }
+  .react-multiple-carousel__arrow--right {
+    background-color: #262626;
+  }
+  .react-multiple-carousel__arrow::before {
+    color: #d1d1d1;
+  }
+  .css-kew2ea-JoyDrawer-content {
+    background-color: #262626 !important;
+  }
+  .buttons:active {
+    background-color: #323232 !important;
+    color: #000 !important;
+  }
+  .buttons:hover {
+    background-color: #323232 !important;
+    color: #000 !important;
+  }
+  .calendar-icon {
+    border: 1px solid #d1d1d1 !important;
+
+    border-radius: 16px !important;
+  }
+  .MuiDayCalendar-header > span {
+    color: #d1d1d1 !important;
+  }
+}
+.MuiDayCalendar-header {
+  color: #d1d1d1;
+  display: flex;
+  justify-content: space-between !important;
+}
+.MuiDayCalendar-header > span {
+  color: #262626;
+  display: flex;
+
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  font-family: "poppins";
+}
+.MuiDayCalendar-weekContainer {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.MuiDayCalendar-monthContainer {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between !important;
+}
+.Toastify__toast{
+  margin-top: 3vw !important;
+  margin-left: 15vw !important;
+  border-radius: 30px !important;
+  width: 70vw !important;
+  height: 13vh !important;
+  padding: 30px !important;
+}
+.Toastify__toast--error{
+  background-color: #FDCECB !important;
+  border-left: 5px solid #B3261E;
+  color: #000 !important;
+}
+.Toastify__toast--success{
+  background-color: #EAFFF5 !important;
+  border-left: 5px solid #2CEAA3;
+  color: #000 !important;
+}
+.calendar-arrow {
+  color: #262626;
+}
+.calendar-icon {
+  border: 1px solid #262626 !important;
+
+  border-radius: 16px !important;
+}
+.calendar-header > div {
+  display: flex;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-950%);
+  }
+  100% {
+    transform: translateX(1000%);
+  }
+}
+
+.animate-slide {
+  animation: slide 22s linear infinite;
+}
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+@media (max-width: 1000px) {
+  .Toastify__toast{
+    margin-top: 3vw !important;
+    margin-left: 15vw !important;
+    border-radius: 25px !important;
+    width: 70vw !important;
+    padding: 10px !important;
+  }
+  .rbc-header {
+    font-size: 8px !important;
+  }
+  .rbc-event-content
+  {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    height: 30px !important;
+    white-space: break-spaces !important;
+  }
+
+  .MuiPopover-paper {
+    padding: 5px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 4px !important;
+    border-radius: 12px !important;
+  }
+  .carousel2 {
+    .react-multiple-carousel__arrow--right {
+      z-index: 2;
+      right: -15px;
+    }
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(-450%);
+    }
+    100% {
+      transform: translateX(400%);
+    }
+  }
+  .animate-slide {
+    animation: slide 14s linear infinite;
+  }
+}
